@@ -17,13 +17,44 @@ header h1{
 main{
     height: 100%;
 }
+
+.btnPrincipal {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 95px;
+    flex-wrap: wrap;
+}
+.btn{
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: pink;
+}
+.btn:hover {
+    background-color: #d9a4ad;
+}
+body.dark-mode{
+    background-color: #010103;
+    color: rgb(25, 25, 25);
+}
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color:rgb(243, 201, 147);
+}
+
 #infoUsuario{
     width: 90%;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 2%;
+    /* margin-top: 0; */
     margin-left: auto;
     margin-right: auto;
     background-color: blanchedalmond;
@@ -50,49 +81,63 @@ main h2{
     width: 90%;
     height: max-content;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;    
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
 }
 
-main .ventaProductos{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: transparent;
-}
 .producto{
-    width: 30%;
-    height: 2%;
+    width: 18%;
+    height:400px;
     background-color:antiquewhite;
-    margin:0px 18px;
+    margin:0px 5px;
     border-radius:10px;
     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+    transition: .3s;
+}
+.producto:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
 }
 .producto img{
-    width: 90%;
+    width: 100%;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tituloProducto{
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.precio{
+    margin-left: 5px;
 }
 .comprar{
     background-color: red;
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    margin:10px  205px;
     border-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 .comprar:hover {
     color: white;
 }
 .comprar:active {
-    background-color: violet ;
+    background-color: orangered ;
+}
+.comprar p{
+    margin-top: 5px;
 }

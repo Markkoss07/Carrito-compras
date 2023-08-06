@@ -9,7 +9,60 @@
     </head>
     <body>
         <header>
-            <h1>Tus Componentes</h1>
+            <h1>Tus Muebles</h1>
+            <div class="contenedorIcono">
+				<div class="iconoCarrito">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="iconoCarrito"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="contadorProducto">
+						<span id="contadordeProductos">0</span>
+					</div>
+				</div>
+
+				<div class="conteinercarroProducto carritoOculto">
+					<div class="filadeProducto oculto">
+						<div class="carritoProducto">
+							<div class="info-carrito-producto">
+								<span class="cantidad-producto-carrito"></span>
+								<p class="titulo-producto-carrito"></p>
+								<span class="precio-producto-carrito"></span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="cerrarIcono"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="carritoTotal oculto">
+						<h4>Total:</h4>
+						<span class="totalPagar"></span>
+					</div>
+					<p class="carritoVacio">El carrito está vacío</p>
+				</div>
+			</div>
         </header>
         <main>
             <div class="btnPrincipal">
@@ -25,46 +78,51 @@
                 </form>
             </section>
             <div id="respuesta"></div>
-            <section id="productos1">
-                <div class="producto">
-                    <img src="https://www.elmueble.com/medio/2021/06/24/00527473_f13e4722_1600x2000.jpg" alt="heladera">
-                    <p class="tituloProducto">
-                        Mesa Moderna
-                    </p>
-                    <p class="precio">$ 245.000</p>
-                    <button class="comprar"><p>Comprar</p></button>
-                </div>
-                <div class="producto">
-                    <img src="https://ofichairs.com/blog_images/es/wp-content/uploads/2021/04/sillas_gaming_racer_Mesa-de-trabajo-1-copia-2-750x563.png" alt="Silla Gamer">
-                    <p class="tituloProducto">
-                        Silla Gamer
-                    </p>
-                    <p class="precio">$ 105.000</p>
-                    <button class="comprar"><p>Comprar</p></button>
-                </div>
-                <div class="producto">
-                    <img src="https://ciudad-muebles.com.ar/wp-content/uploads/2022/09/Ambientacion-negro-2-metros-edit.jpg" alt="escritorio">
-                    <p class="tituloProducto">
-                        Escritorio Gamer
-                    </p>
-                    <p class="precio">$ 70.000</p>
-                    <button class="comprar"><p>Comprar</p></button>
-                </div>
-                <div class="producto">
-                    <img src="https://tiendaliving.com.ar/cdn/shop/products/TIENDALIVING4158_600x.jpg?v=1652540841" alt="sillon">
-                    <p class="tituloProducto">
-                        Sillón para living
-                    </p>
-                    <p class="precio">$ 200.000</p>
-                    <button class="comprar"><p>Comprar</p></button>
-                </div>
-                <div class="producto">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_994536-MLA48345063464_112021-O.webp" alt="cuadro">
-                    <p class="tituloProducto">
-                        Cuadro Decorativo
-                    </p>
-                    <p class="precio">$ 15.000</p>
-                    <button class="comprar"><p>Comprar</p></button>
+            <!-- h3 -->
+            <section id="productosPrincipal">
+                <div id="productosenVenta">
+                    <div class="lista1Productos">
+                        <div class="producto">
+                            <img src="https://www.elmueble.com/medio/2021/06/24/00527473_f13e4722_1600x2000.jpg" alt="heladera">
+                            <p class="tituloProducto">
+                                Mesa Moderna
+                            </p>
+                            <p class="precio">$ 245.000</p>
+                            <button class="botonComprar"><p>Comprar</p></button>
+                        </div>
+                        <div class="producto">
+                            <img src="https://ofichairs.com/blog_images/es/wp-content/uploads/2021/04/sillas_gaming_racer_Mesa-de-trabajo-1-copia-2-750x563.png" alt="Silla Gamer">
+                            <p class="tituloProducto">
+                                Silla Gamer
+                            </p>
+                            <p class="precio">$ 105.000</p>
+                            <button class="botonComprar"><p>Comprar</p></button>
+                        </div>
+                        <div class="producto">
+                            <img src="https://tiendaliving.com.ar/cdn/shop/products/TIENDALIVING4158_600x.jpg?v=1652540841" alt="sillon">
+                            <p class="tituloProducto">
+                                Sillón para living
+                            </p>
+                            <p class="precio">$ 200.000</p>
+                            <button class="botonComprar"><p>Comprar</p></button>
+                        </div>
+                        <div class="producto">
+                            <img src="https://ciudad-muebles.com.ar/wp-content/uploads/2022/09/Ambientacion-negro-2-metros-edit.jpg" alt="escritorio">
+                            <p class="tituloProducto">
+                                Escritorio Gamer
+                            </p>
+                            <p class="precio">$ 70.000</p>
+                            <button class="botonComprar"><p>Comprar</p></button>
+                        </div>
+                        <div class="producto">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_994536-MLA48345063464_112021-O.webp" alt="cuadro">
+                            <p class="tituloProducto">
+                                Cuadro Decorativo
+                            </p>
+                            <p class="precio">$ 15.000</p>
+                            <button class="botonComprar"><p>Comprar</p></button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <div>
